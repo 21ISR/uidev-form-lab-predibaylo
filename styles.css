@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    
+    background-color: aqua;
+    width: 400px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+svg {
+    max-width: 100%;
+}
