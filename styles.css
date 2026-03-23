@@ -31,6 +31,34 @@ h3 {
     display: flex;
     justify-content: center;
 }
-svg {
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+svg { 
     max-width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    color: #333;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
 }
