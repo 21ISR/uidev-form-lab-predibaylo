@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div>
-        <form action="/api/login" method="get">
-            <section>
+    <div class="div_register">
+        <form action="/api/login" method="post">
+            <section class="top_section">
                 <h1>Student Registration</h1>
                 <h2>Create your student account</h2>
             </section>
@@ -32,15 +32,15 @@
                 <fieldset>
                     <label for="program">Select Program</label>
                     <select name="program" id="program">
-                        <option value=">Choose your program</option>
-                        <option value=" CS">Computer Science</option>
+                        <option value=" ">Choose your program</option>
+                        <option value="CS">Computer Science</option>
                         <option value="ENG">Engineering</option>
                         <option value="BUS">Business</option>
                         <option value="A&H">Arts & Humanities</option>
                         <option value="SCI">Science</option>
                     </select>
                 </fieldset>
-                <fieldset></fieldset>
+                <fieldset>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password placeholder=" Create a password">
                 </fieldset>
