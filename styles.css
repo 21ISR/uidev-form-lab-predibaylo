@@ -20,12 +20,12 @@ div {
 }
 
 .div_register {
-    width: 400px;
+    width: 350px;
     height: 700px;
     border-radius: 10px;
 
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 15% 85%;
 
 }
 section[type="title"]{
@@ -33,7 +33,7 @@ section[type="title"]{
 }
 
 .div_login {
-    width: 400px;
+    width: 350px;
     height: 500px;
     border-radius: 10px;
 }
@@ -41,17 +41,14 @@ section[type="title"]{
 h1 {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 h2 {
     display: flex;
     justify-content: center;
-}
-
-.top_sectiom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 18px;
+    color:white;
 }
 
 a:not([class]) {
@@ -68,16 +65,12 @@ a:hover {
     color: #667eea;
 }
 
-fieldset {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-}
-
 span {
     display: flex;
     flex-direction: row;
+    gap: 4px;
 }
+
 
 svg { 
     max-width: 100%;
@@ -86,7 +79,7 @@ svg {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 80%;
+    width: 85%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -95,7 +88,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-    width: 80%;
+    width: 85%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -113,7 +106,7 @@ button:hover {
 }
 
 select {
-    width: 80%;
+    width: 85%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -126,21 +119,34 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+}
+
+section[type="title"] {
+    background-color: aqua;
 }
 
 svg {
     max-width: 100%;
 }
+.icon_span { 
+    gap: 10px;
+}
 
 fieldset {
-  border: none;
-  padding: 0;
-  margin: 0 ;
+    border: none;
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
 }
 
 .reg_top_sec {
     grid-row:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .reg_main_sec {
     grid-row:2 ;
@@ -148,6 +154,9 @@ fieldset {
 
 .login_top_sec {
     grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login_main_sec {
