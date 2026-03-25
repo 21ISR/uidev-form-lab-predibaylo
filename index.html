@@ -11,35 +11,37 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
     <div class="div_login">
         <form action="/api/register" method="post">
-            <section>
-                <h1>Student Login</h1>
-                <h2>Access your student account</h2>
+            <section type="title" class="login_top_sec">
+                <fieldset>
+                    <h1>Student Login</h1>
+                    <h2>Access your student account</h2>
+                </fieldset>
             </section>
-            <section>
+            <section class="login_main_sec">
                 <fieldset>
                     <label>Email or Student ID</label>
                     <input type="text" placeholder="Enter your email or student ID">
                 </fieldset>
                 <fieldset>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
                 </fieldset>
                 <span>
                     <label for="checkbox"></label>
                     <input type="checkbox" id="checkbox" name="checkbox">
-                    <p>Remember me</p>
+                    <p> Remember me </p>
                     <a href="">Forgot password?</a>
                 </span>
                 <button type="submit">Log in</button>
             </section>
         </form>
-        <section>
+        <section class="login_bottom_sec">
             <p>------or------</p>
             <span>
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 488 512" height="50px"
