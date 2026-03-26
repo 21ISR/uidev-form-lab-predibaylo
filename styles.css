@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f5f7fa;
+    background-color: #c3cfe2;
 
     font-family: Arial, Helvetica, sans-serif
 }
@@ -12,8 +12,8 @@ div {
     display: flex;
     flex-direction: column;
 
-    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.2);
-    background-color: #c3cfe2;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.05);
+    background-color: #f5f7fa;
 
     display: grid;
     grid-template-rows: 15% 60% 20%;
@@ -22,7 +22,6 @@ div [type="icon"] {
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 100%;
     box-shadow: 0 0 0 2px rgba(74, 85, 104, 0.1);
     background-color: #c3cfe2;
@@ -38,13 +37,12 @@ div [type="icon"] {
 
     display: grid;
     grid-template-rows: 15% 85%;
-
 }
 
 
 .div_login {
     width: 350px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
 }
 
@@ -59,6 +57,7 @@ h2 {
 }
 
 a:not([class]) {
+    font: 15px;
     color: #667eea;
 }
 
@@ -79,10 +78,15 @@ a:hover {
 span {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    justify-content: space-between;
 
-    margin-top: ;
-    margin-bottom: ;
+    max-width: 95%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+span[type="for_checkbox"] {
+    gap: 0;
+    margin: 0;
 }
 
 input[type="text"],
@@ -128,7 +132,6 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* color: #4a5568; */
 }
 
 section[type="title"]{
@@ -136,6 +139,9 @@ section[type="title"]{
     margin-top: 0px;
     justify-content: center;
     align-self: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 section[type="title"] {
@@ -144,14 +150,14 @@ section[type="title"] {
 
 label {
     margin-top: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     font-size: 14px;
 }
 svg {
     max-width: 100%;
 }
 .icon_span { 
-    gap: 10px;
+    column-gap: 10px;
 }
 
 fieldset {
