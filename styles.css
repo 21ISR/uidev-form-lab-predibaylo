@@ -18,6 +18,18 @@ div {
     display: grid;
     grid-template-rows: 15% 60% 20%;
 }
+div [type="icon"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    box-shadow: 0 0 0 2px rgba(74, 85, 104, 0.1);
+    background-color: #c3cfe2;
+    height: 50px;
+    width: 50px;
+    border-color: black;
+}
 
 .div_register {
     width: 350px;
@@ -28,9 +40,7 @@ div {
     grid-template-rows: 15% 85%;
 
 }
-section[type="title"]{
-    gap: 0px ;
-}
+
 
 .div_login {
     width: 350px;
@@ -39,20 +49,21 @@ section[type="title"]{
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
+
     color: white;
 }
 
 h2 {
-    display: flex;
-    justify-content: center;
     font-size: 18px;
     color:white;
 }
 
 a:not([class]) {
     color: #667eea;
+}
+
+p {
+    font-size: 13px;
 }
 
 a {
@@ -69,17 +80,15 @@ span {
     display: flex;
     flex-direction: row;
     gap: 4px;
-}
 
-
-svg { 
-    max-width: 100%;
+    margin-top: ;
+    margin-bottom: ;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 85%;
+    width: 90%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -88,7 +97,7 @@ input[type="password"] {
 }
 
 button[type="submit"] {
-    width: 85%;
+    width: 90%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -106,7 +115,7 @@ button:hover {
 }
 
 select {
-    width: 85%;
+    width: 90%;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -119,12 +128,25 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* color: #4a5568; */
+}
+
+section[type="title"]{
+    gap: 0px ;
+    margin-top: 0px;
+    justify-content: center;
+    align-self: center;
 }
 
 section[type="title"] {
     background-color: aqua;
 }
 
+label {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
 svg {
     max-width: 100%;
 }
@@ -138,8 +160,13 @@ fieldset {
     margin: 0 ;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 95%;
+    margin-top:4% ;
+    margin-left: 7%;
+}
+fieldset[type="center_content"] {
+    justify-content: center;
+    align-items: center;
 }
 
 .reg_top_sec {
