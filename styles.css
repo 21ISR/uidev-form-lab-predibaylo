@@ -6,7 +6,7 @@ body {
     margin: 0;
     background-color: #c3cfe2;
 
-    font-family: Poppins, Arial, sans-serif
+    font-family: Poppins, Arial, sans-serif;
 }
 div {
     display: flex;
@@ -34,7 +34,7 @@ div [type="icon"] {
     border-radius: 10px;
 
     display: grid;
-    grid-template-rows: 15% 85%;
+    grid-template-rows: 15% 80%;
 }
 
 
@@ -45,6 +45,7 @@ div [type="icon"] {
 
     display: grid;
     grid-template-rows: 15% 60% 10%;
+    
 }
 div[type="line"] {
     box-shadow: none;
@@ -56,24 +57,33 @@ div[type="line"] {
 h1 {
     font-size: 30px;
     color: white;
-    margin-bottom: ;
+    margin-bottom: 8px;
 }
 
 h2 {
     font-size: 14px;
     color:white;
-    margin-bottom: ;
+    margin-bottom:2px;
 }
+.h1_reg{
+
+}
+
+.h2_reg{
+
+}
+
 a:not([class]) {
     font: 15px;
     color: #667eea;
 }
 
 p {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 a {
+    font-size: 12px;
     text-decoration:none;
     color: #667eea;
 }
@@ -105,7 +115,7 @@ span[type="for_checkbox"] {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    height: 42px;
+    height: 38px;
     width: 90%;
     padding: 10px 14px;
     border: 1px solid #ccc;
@@ -117,6 +127,7 @@ input[type="password"] {
 
 button[type="submit"] {
     width: 90%;
+    height: 52px;
     padding: 10px 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -140,7 +151,7 @@ select {
     border-radius: 6px;
     background: #f5f7fa;
     color: #333;
-    height: 42px;
+    height: 38px;
 
 }
 
@@ -151,19 +162,6 @@ section {
     align-items: center;
 }
 
-section[type="title"]{
-    gap: 0px ;
-    margin-top: 0px;
-    justify-content: center;
-    align-self: center;
-    background:linear-gradient(0.3turn, #667eea, #764ba2);
-    font-size: 0.8em;
-    color: #fff;
-
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-}
 
 label {
     margin-top: 5px;
@@ -190,23 +188,40 @@ fieldset {
 fieldset[type="center_content"] {
     justify-content: center;
     align-items: center;
+    margin-left: 0;
 }
 
 .reg_top_sec {
-    grid-row:1;
-    display: flex;
+    gap: 0px ;
+    margin-top: 0px;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    background:linear-gradient(0.3turn, #667eea, #764ba2);
+    font-size: 0.8em;
+    color: #fff;
+    height: 100%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-row: 1;
 }
 .reg_main_sec {
     grid-row:2 ;
 }
 
 .login_top_sec {
-    grid-row: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0px ;
+    margin-top: 0px;
+    background:linear-gradient(0.3turn, #667eea, #764ba2);
+    font-size: 0.8em;
+    color: #fff;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-row: 1;
 }
 
 .login_main_sec {
